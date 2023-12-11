@@ -48,20 +48,19 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-              <div className=" flex items-center justify-between inset-y-0 inset-x-1 absolute pl-2 ">
-                <button
-                  onClick={prev}
-                  className="w-[40px] h-[40px] bg-white p-2 rounded-full shadow-xl border-2 border-slate-200 "
-                >
-                  <FaChevronLeft />
-                </button>
-                <button
-                  onClick={next}
-                  className="w-[40px] h-[40px] bg-white p-2 rounded-full shadow-xl border-2 border-slate-200 "
-                >
-                  <FaChevronRight />
-                </button>
-              </div>
+
+              <button
+                onClick={prev}
+                className="w-[40px] h-[40px] bg-white p-2 rounded-full shadow-xl border-2 border-slate-200 absolute left-0 top-1/3  "
+              >
+                <FaChevronLeft />
+              </button>
+              <button
+                onClick={next}
+                className="w-[40px] h-[40px] bg-white p-2 rounded-full shadow-xl border-2 border-slate-200 absolute right-0 top-1/3 "
+              >
+                <FaChevronRight />
+              </button>
 
               <div className="absolute left-0 right-0 -bottom-5 flex gap-2 justify-center items-center ">
                 {projects.map((_, i) => (
