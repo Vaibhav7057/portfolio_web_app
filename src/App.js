@@ -22,7 +22,6 @@ function App() {
       <About />
       <Skills />
       <Projects />
-
       <Routes>
         <Route path="/" element={<Resume />}>
           <Route path="" element={<Details />} />
