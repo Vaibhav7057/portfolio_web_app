@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+
 const About = () => {
   return (
     <div id="about" className="bg-white transition-all">
@@ -38,18 +38,10 @@ const About = () => {
             </a>
           </div>
           <div className="flex flex-1 relative justify-center items-start">
-            <motion.div
-              whileInView={{ rotate: [0, 12] }}
-              transition={{ duration: 1, ease: "easeInOut" }}
-              className="w-[22vmax] h-[30vmax] absolute top-1.1 rotate-12 left-30 bg-favtext rounded-lg "
-            ></motion.div>
-            <motion.div
-              whileInView={{ rotate: [12, 0] }}
-              transition={{ duration: 1, ease: "easeInOut" }}
-              className="w-[22vmax] bg-dor rounded-lg overflow-hidden z-10   "
-            >
+            <div className="w-[22vmax] h-[30vmax] absolute top-1.1 rotate-12 left-30 bg-favtext rounded-lg "></div>
+            <div className="w-[22vmax] bg-dor rounded-lg overflow-hidden z-10   ">
               <img src="/images/about.png" alt="Creater" />
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
