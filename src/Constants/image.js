@@ -70,9 +70,27 @@ const details = [
   { name: "Projects", img: "/images/projects.png", link: "/project" },
 ];
 const projects = [
-  { name: "Todo List", img: "/images/working.png" },
-  { name: "Currency Converter", img: "/images/currencycon.png" },
-  { name: "E-commerce Website", img: "/images/working.png" },
+  {
+    name: "Todo List",
+    img: "/images/working.png",
+    active: false,
+    glink: "",
+    alink: "",
+  },
+  {
+    name: "Currency Converter",
+    img: "/images/currencycon.png",
+    active: true,
+    glink: "https://github.com/Vaibhav7057/currency-converter",
+    alink: "https://vgcurrencyconverter.netlify.app",
+  },
+  {
+    name: "E-commerce Website",
+    img: "/images/working.png",
+    active: false,
+    glink: "",
+    alink: "",
+  },
 ];
 
 export { details, projects };

@@ -41,6 +41,9 @@ const Projects = () => {
                       key={obj.name + i}
                       imgadd={obj.img}
                       projectName={obj.name}
+                      active={obj.active}
+                      gitlink={obj.glink}
+                      applink={obj.alink}
                     />
                   ))}
                 </div>
