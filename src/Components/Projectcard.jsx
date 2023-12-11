@@ -12,7 +12,9 @@ const Projectcard = ({ imgadd, projectName, active, gitlink, applink }) => {
       <div className="flex justify-between px-1">
         <a href={gitlink} target="_blank" rel="noreferrer">
           <button
-            className="py-0.5 px-3 bg-[#265073] text-slate-200 text-sm rounded-sm hover:text-md hover:text-white hover:cursor-pointer "
+          className={`py-0.5 px-3 bg-[#265073] text-slate-200 text-sm rounded-sm hover:text-md hover:text-white ${
+              active ? "hover:cursor-pointer" : ""
+            }`}
             disabled={!active}
           >
             Github
@@ -20,7 +22,9 @@ const Projectcard = ({ imgadd, projectName, active, gitlink, applink }) => {
         </a>
         <a href={applink} target="_blank" rel="noreferrer">
           <button
-            className="py-0.5 px-3 bg-[#265073] text-slate-200 text-sm rounded-sm hover:text-md hover:text-white hover:cursor-pointer "
+            className={`py-0.5 px-3 bg-[#265073] text-slate-200 text-sm rounded-sm hover:text-md hover:text-white ${
+              active ? "hover:cursor-pointer" : ""
+            }`}
             disabled={!active}
           >
             Live Demo
