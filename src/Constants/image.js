@@ -71,7 +71,7 @@ const details = [
 ];
 const projects = [
   { name: "Todo List", img: "/images/working.png" },
-  { name: "Currency Converter", img: "/images/working.png" },
+  { name: "Currency Converter", img: "/images/currencycon.png" },
   { name: "E-commerce Website", img: "/images/working.png" },
 ];
 
