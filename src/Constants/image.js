@@ -92,7 +92,6 @@ const projects = [
     alink: "",
   },
 ];
-
 export { details, projects };
 
 export default skillsets;

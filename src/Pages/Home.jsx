@@ -1,6 +1,8 @@
 import React from "react";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaGithub, FaInstagram } from "react-icons/fa";
+import Typical from "react-typical";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -47,11 +49,30 @@ const Home = () => {
           </div>
         </div>
         <div className="flex flex-col items-center justify-start flex-1">
-          <div className=" transition-all mt-16 mb-7 w-[270px] overflow-hidden h-[270px] min-h-[250px] min-w-[250px] rounded-full shadow-2xl bg-dor ">
+          <motion.div
+            whileInView={{ scale: [0, 1] }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+            className=" transition-all mt-16 mb-7 w-[270px] overflow-hidden h-[270px] min-h-[250px] min-w-[250px] rounded-full shadow-2xl bg-dor "
+          >
             <img src="/images/profile.png" alt="creater profile" />
-          </div>
+          </motion.div>
           <h1 className="text-lg text-favtext font-bold ">
-            full stack developer
+            <Typical
+              steps={[
+                "Enthusiastic Developer",
+                2000,
+
+                "Full Stack Developer",
+                2000,
+                "MERN Stack Developer",
+                2000,
+                "Cross Platform Developer",
+                2000,
+                "React Developer",
+                2000,
+              ]}
+              loop={Infinity}
+            />
           </h1>
         </div>
       </div>

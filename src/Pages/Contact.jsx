@@ -1,10 +1,36 @@
 import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
   const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_0u7nhoy",
+        "template_7ngmwhi",
+        form.current,
+        "h8a04V2f5ZlMJKcPQ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Message sent successfully!");
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("Something went wrong!");
+        }
+      );
+  };
+
   return (
     <div id="contact" className="bg-white">
+      <Toaster />
       <div className="flex flex-col md:flex-row px-10 py-3 pt-16 ">
         <div className=" flex-1 pt-6 mb-14 sm:mb-0 ">
           <h3 className="text-[28px] md:text-[2vmax] font-bold text-favtext">
@@ -41,7 +67,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex-1 py-10 pb-28 ">
-          <form ref={form} className="flex flex-col gap-1  items-center ">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="flex flex-col gap-1  items-center "
+          >
             <input
               type="text"
               placeholder="Your Name"

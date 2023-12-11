@@ -33,7 +33,7 @@ const Resume = () => {
                   <NavLink
                     to={ele.link}
                     key={ele.name + i}
-                    className="hover:bg-pink-100 cursor-pointer font-medium pl-5 w-full py-1 hover:pl-7 rounded-r-full "
+                    className="hover:bg-pink-100 hover:pl-7 cursor-pointer font-medium pl-5 w-full py-1  rounded-r-full "
                     style={({ isActive }) => {
                       return {
                         backgroundColor: isActive ? "#FF9209" : "",
@@ -54,7 +54,7 @@ const Resume = () => {
               <Outlet />
             </div>
             <a
-              href="https://drive.google.com/file/d/15enGjGQLMFRpLPf8TT7PFGrqhVCiQPy1/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1e_g0dYJzEzYW3cszFGKle5k-YeyX2rI4/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
             >
