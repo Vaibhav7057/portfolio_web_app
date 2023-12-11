@@ -12,7 +12,7 @@ const Skill = () => {
       <li>
         <h3 className="font-medium text-lg text-favtext">Libraries</h3>
         <p className="italic text-slate-600 text-lg ">
-          React Js, Redux Toolkit, Tailwind Css, Node Js
+          React Js, Redux Toolkit, Tailwind Css, Express Js, Node Js, Mongo DB
         </p>
       </li>
     </ul>

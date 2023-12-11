@@ -18,6 +18,13 @@ const Project = () => {
         </p>
       </li>
       <li>
+        <h3 className="font-medium text-lg text-favtext">Currency Converter</h3>
+        <p className="italic">
+          Here we can convert any currency to any other currency and all
+          currency rates are live
+        </p>
+      </li>
+      <li>
         <h3 className="font-medium text-lg text-favtext">E-commerce website</h3>
         <p className="italic">
           currently working on this project, this is a MERN stack project
