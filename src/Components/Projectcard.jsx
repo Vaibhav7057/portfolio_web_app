@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 const Projectcard = ({ imgadd, projectName, active, gitlink, applink }) => {
   return (
@@ -33,4 +33,4 @@ const Projectcard = ({ imgadd, projectName, active, gitlink, applink }) => {
   );
 };
 
-export default Projectcard;
+export default memo(Projectcard);

@@ -72,10 +72,10 @@ const details = [
 const projects = [
   {
     name: "Todo List",
-    img: "/images/working.png",
-    active: false,
-    glink: "",
-    alink: "",
+    img: "/images/todolist.png",
+    active: true,
+    glink: "https://github.com/Vaibhav7057/fullstack_todo",
+    alink: "https://todo-gedamecosystem.vercel.app",
   },
   {
     name: "Currency Converter",
