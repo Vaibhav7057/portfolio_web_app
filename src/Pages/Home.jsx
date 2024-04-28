@@ -1,10 +1,23 @@
 import React from "react";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaGithub, FaInstagram } from "react-icons/fa";
-import Typical from "react-typical";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 
 const Home = () => {
+  const [text] = useTypewriter({
+    words: [
+      "Enthusiastic Developer",
+      "Full Stack Developer",
+      "MERN Stack Developer",
+      "Cross Platform Developer",
+      "React Developer",
+    ],
+    loop: 0,
+    typeSpeed: 120,
+    deleteSpeed: 80,
+  });
+
   return (
     <div id="home" className="bg-bgcolor">
       <div className="flex flex-col sm:flex-row px-10 pb-20 sm:pb-0 pt-16">
@@ -56,23 +69,9 @@ const Home = () => {
           >
             <img src="/images/profile.png" alt="creater profile" />
           </motion.div>
-          <h1 className="text-lg text-favtext font-bold ">
-            <Typical
-              steps={[
-                "Enthusiastic Developer",
-                2000,
-
-                "Full Stack Developer",
-                2000,
-                "MERN Stack Developer",
-                2000,
-                "Cross Platform Developer",
-                2000,
-                "React Developer",
-                2000,
-              ]}
-              loop={Infinity}
-            />
+          <h1 className="text-lg text-favtext font-bold mt-7 ">
+            <span>{text}</span>
+            <Cursor cursorColor="red" cursorStyle="|" />
           </h1>
         </div>
       </div>
