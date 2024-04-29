@@ -91,6 +91,13 @@ const projects = [
     glink: "",
     alink: "",
   },
+  {
+    name: "Personal Portfolio",
+    img: "/images/portfolio.png",
+    active: true,
+    glink: "https://github.com/Vaibhav7057/portfolio_web_app",
+    alink: "https://vaibhavgedam.netlify.app/",
+  },
 ];
 export { details, projects };
 
