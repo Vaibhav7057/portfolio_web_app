@@ -53,7 +53,7 @@ const Home = () => {
               <FaGithub className="transition-all hover:scale-[120%] hover:cursor-pointer" />
             </a>
             <a
-              href="https://www.instagram.com/vaibhav.gedam"
+              href="https://www.instagram.com/vaibhavgedam95"
               target="_blank"
               rel="noreferrer"
             >
