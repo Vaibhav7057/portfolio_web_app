@@ -28,7 +28,7 @@ const About = () => {
               projects that solve real-world problems.
             </p>
             <a
-              href="https://drive.google.com/file/d/15enGjGQLMFRpLPf8TT7PFGrqhVCiQPy1/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1bjytngrQt7bFBHzja4hQ007cEUHDj-Jt/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
             >
