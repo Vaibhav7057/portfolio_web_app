@@ -54,7 +54,7 @@ const Resume = () => {
               <Outlet />
             </div>
             <a
-              href="https://drive.google.com/file/d/1bjytngrQt7bFBHzja4hQ007cEUHDj-Jt/view?usp=drive_link"
+              href="https://drive.google.com/file/d/17LrvhqrMf_-kkoNB1pZUgCr2cJPTk2Wq/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
             >
