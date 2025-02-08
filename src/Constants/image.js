@@ -78,6 +78,13 @@ const projects = [
     alink: "https://todo-gedamecosystem.vercel.app",
   },
   {
+    name: "Weather App",
+    img: "/images/weatherapp.png",
+    active: true,
+    glink: "https://github.com/Vaibhav7057/weather-app",
+    alink: "https://weather-vg.vercel.app",
+  },
+  {
     name: "Currency Converter",
     img: "/images/currencycon.png",
     active: true,
