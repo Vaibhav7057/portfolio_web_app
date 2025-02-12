@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import Navigationbar from "./Components/Navigationbar";
 import Home from "./Pages/Home";
 import Skills from "./Pages/Skills";
@@ -15,9 +15,12 @@ import Project from "./Components/resume/Project.js";
 import Skill from "./Components/resume/Skill.js";
 
 function App() {
+
+const [theme,setTheme] = useState("light");
+const changeTheme = useCallback(()=>{setTheme(theme === 'light' ?'dark':'light')},[theme]);
   return (
-    <div className="App">
-      <Navigationbar />
+    <div className={`app ${theme}`}>
+      <Navigationbar changeTheme={changeTheme} />
       <Home />
       <About />
       <Skills />
