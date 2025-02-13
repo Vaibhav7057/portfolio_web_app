@@ -5,13 +5,13 @@ import { NavLink, Outlet } from "react-router-dom";
 
 const Resume = () => {
   return (
-    <div id="resume" className="bg-bgcolor">
+    <div id="resume" className="bg-bgcolor dark:bg-darkbg1">
       <div className="flex flex-col px-10 py-1 pt-16 ">
         <div className="flex  justify-center items-center flex-col mb-10 md:mb-0 pt-1">
-          <h3 className="text-[28px] md:text-[3vmax] font-bold text-favtext">
+          <h3 className="text-[28px] md:text-[3vmax] font-bold text-favtext dark:text-darkt1">
             My <span className="text-dor">Resume</span>
           </h3>
-          <p className="text-sm md:text-lg font-medium text-favtext">
+          <p className="text-sm md:text-lg font-medium text-favtext dark:text-darkt2">
             My formal Bio Details
           </p>
         </div>
@@ -33,7 +33,7 @@ const Resume = () => {
                   <NavLink
                     to={ele.link}
                     key={ele.name + i}
-                    className="hover:bg-pink-100 hover:pl-7 cursor-pointer font-medium pl-5 w-full py-1  rounded-r-full "
+                    className="hover:bg-pink-100 dark:text-darkt2 dark:hover:text-black hover:pl-7 cursor-pointer font-medium pl-5 w-full py-1  rounded-r-full "
                     style={({ isActive }) => {
                       return {
                         backgroundColor: isActive ? "#FF9209" : "",

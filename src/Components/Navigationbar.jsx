@@ -7,7 +7,7 @@ const Navigationbar = (props) => {
   const pages = ["home", "about", "skills", "projects", "resume", "contact"];
 
   return (
-    <div className="fixed top-0 right-0 left-0 z-20 dark:bg-black dark:text-neutral-200 ">
+    <div className="fixed top-0 right-0 left-0 z-20 dark:bg-black ">
       <header className="backdrop-blur-[4px] bg-[rgba(250,250,250,0.4)] flex justify-between items-center py-4 px-10 relative">
         <a href="#home">
           <h1 className="animate-wiggle font-rancho text-[25px] tracking-[5px] font-bold text-slate-400">
@@ -35,8 +35,8 @@ const Navigationbar = (props) => {
         </div>{" "}
       </header>
       {menu && (
-        <ul className="opacity-[200%] animate-propel flex flex-col gap-5 z-10  absolute top-0 right-0 w-[250px] bg-white border-l-2  pl-12 font-medium md:hidden transition-all h-[500px] ">
-          <div className="p-2 rounded-full cursor-pointer hover:scale-105   transition-all text-2xl mt-4 ml-[122px] text-[#191970] font-extrabold ">
+        <ul className="opacity-[200%] animate-propel flex flex-col gap-5 z-10 dark:bg-darkbg2  absolute top-0 right-0 w-[250px] bg-white border-l-2  pl-12 font-medium md:hidden transition-all h-[500px] ">
+          <div className="p-2 rounded-full cursor-pointer hover:scale-105 dark:text-darkt1   transition-all text-2xl mt-4 ml-[122px] text-[#191970] font-extrabold ">
             <HiX onClick={() => setMenu(false)} />
           </div>
           {pages.map((page, i) => (
@@ -46,7 +46,7 @@ const Navigationbar = (props) => {
             >
               <a
                 href={`#${page}`}
-                className="capitalize hover:text-violet-700 text-[#191970] hover:border-b-2 border-sky-900"
+                className="capitalize hover:text-violet-700 text-[#191970] dark:text-darkt1 dark:hover:text-darkt3 hover:border-b-2 border-sky-900"
                 onClick={() => setMenu(false)}
               >
                 {page}

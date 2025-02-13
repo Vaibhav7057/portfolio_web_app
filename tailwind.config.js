@@ -45,6 +45,11 @@ module.exports = {
         maintext: "#FF6C22",
         dor: "#FF9209",
         bgcolor: "#EDF2F8",
+        darkbg1:"#1D1616",
+        darkbg2:"#17153B",
+        darkt1:"#EEEEEE",
+        darkt2:"#E2DFD0",
+        darkt3:"#E8BCB9"
       },
       fontFamily: {
         rancho: ["Rancho", "cursive"],

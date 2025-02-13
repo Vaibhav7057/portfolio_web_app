@@ -11,23 +11,23 @@ const Projects = () => {
   const next = () =>
     setCurr((curr) => (curr === projects.length - 1 ? 0 : curr + 1));
   return (
-    <div id="projects" className="bg-white">
+    <div id="projects" className="bg-white dark:bg-darkbg2">
       <div className="flex flex-col px-10 py-4 pt-14 ">
         <div className="flex  justify-center items-center flex-col mb-10 md:mb-0 pt-3">
-          <h3 className="text-[28px] md:text-[3vmax] font-bold text-favtext">
+          <h3 className="text-[28px] md:text-[3vmax] font-bold text-favtext dark:text-darkt1">
             My <span className="text-dor">Projects</span>
           </h3>
-          <p className="text-sm md:text-lg font-medium text-favtext">
+          <p className="text-sm md:text-lg font-medium text-favtext dark:text-darkt1">
             My Awesome Work
           </p>
         </div>
 
         <div className="flex flex-1 md:flex-row flex-col ">
           <div className="flex items-center gap-4 py-12 flex-col flex-1 ">
-            <h4 className="text-[15px] sm:text-[16px] lg:text-[1.3vmax] font-bold text-favtext mt-10">
+            <h4 className="text-[15px] sm:text-[16px] lg:text-[1.3vmax] font-bold text-favtext dark:text-darkt2 mt-10">
               Turning Vision Into Reality With{" "}
               <span className="text-dor">Code</span> And{" "}
-              <span className="text-green-800">Design</span>
+              <span className="text-green-800 dark:text-darkt3">Design</span>
             </h4>
 
             <div className="w-[240px] lg:w-[490px] h-[210px] mt-9  flex relative">
@@ -67,7 +67,7 @@ const Projects = () => {
                   <div
                     onClick={() => setCurr(i)}
                     key={i}
-                    className={`w-3 h-3 rounded-full bg-favtext ${
+                    className={`w-3 h-3 rounded-full bg-favtext dark:bg-darkt2 ${
                       i === curr ? "p-2" : "bg-opacity-50"
                     } `}
                   />
@@ -78,10 +78,10 @@ const Projects = () => {
 
           <div className=" flex-1 ">
             <div className="md:px-10 py-20 flex justify-between items-start flex-col">
-              <h4 className="text-[18px] md:text-[2vmax] font-bold text-favtext">
+              <h4 className="text-[18px] md:text-[2vmax] font-bold text-favtext dark:text-darkt1">
                 Creativity starts with viewing the whole world differently
               </h4>
-              <h4 className="text-[18px] md:text-[2vmax] font-bold text-favtext mt-4">
+              <h4 className="text-[18px] md:text-[2vmax] font-bold text-favtext dark:text-darkt1 mt-4">
                 Let me help you solve your critical website development
                 challenges
               </h4>

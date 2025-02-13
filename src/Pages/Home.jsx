@@ -19,16 +19,16 @@ const Home = () => {
   });
 
   return (
-    <div id="home" className="bg-bgcolor">
+    <div id="home" className="bg-bgcolor dark:bg-darkbg1  ">
       <div className="flex flex-col sm:flex-row px-10 pb-20 sm:pb-0 pt-16">
         <div className="flex flex-col flex-1 gap-4 items-start py-24  ">
-          <h3 className="text-[28px] md:text-[3vmax] font-bold text-favtext">
+          <h3 className="text-[28px] md:text-[3vmax] font-bold text-favtext dark:text-darkt1">
             Hello! I Am
           </h3>
           <h1 className="text-[28px] md:text-[3vmax] font-bold text-dor">
             Vaibhav Gedam
           </h1>
-          <p className="text-sm md:text-md font-medium text-favtext">
+          <p className="text-sm md:text-md font-medium text-favtext dark:text-darkt2">
             Fullstack developer in web designing and development, a MERN stack
             developer producing the Quality work
           </p>
@@ -69,7 +69,7 @@ const Home = () => {
           >
             <img src="/images/profile.png" alt="creater profile" />
           </motion.div>
-          <h1 className="text-lg text-favtext font-bold mt-7 ">
+          <h1 className="text-lg text-favtext font-bold mt-7 dark:text-darkt3 ">
             <span>{text}</span>
             <Cursor cursorColor="red" cursorStyle="|" />
           </h1>

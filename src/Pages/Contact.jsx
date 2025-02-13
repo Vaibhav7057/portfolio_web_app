@@ -29,18 +29,18 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="bg-white">
+    <div id="contact" className="bg-white dark:bg-darkbg2">
       <Toaster />
       <div className="flex flex-col md:flex-row px-10 py-3 pt-16 ">
         <div className=" flex-1 pt-6 mb-14 sm:mb-0 ">
-          <h3 className="text-[28px] md:text-[2vmax] font-bold text-favtext">
+          <h3 className="text-[28px] md:text-[2vmax] font-bold text-favtext dark:text-darkt1">
             Get in Touch
           </h3>
           <h3 className="text-[28px] md:text-[2vmax] font-bold text-dor">
             Contact Me
           </h3>
           <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row mt-24 gap-5">
-            <div className="flex  px-4 py-3 shadow-xl border-2 rounded-lg border-slate-200 gap-5 cursor-pointer sm:justify-start sm:items-center items-center hover:scale-105 transition-all">
+            <div className="flex dark:shadow-darkt3 dark:bg-darkt1 px-4 py-3 shadow-xl border-2 rounded-lg border-slate-200 gap-5 cursor-pointer sm:justify-start sm:items-center items-center hover:scale-105 transition-all">
               <img src="/images/email.png" alt="email" className="w-[40px]" />
               <a
                 href="mailto:vaibhavgedmavg.vg@gmail.com"
@@ -49,7 +49,7 @@ const Contact = () => {
                 vaibhavgedamvg.vg @gmail.com
               </a>
             </div>
-            <div className="flex  px-4 py-3 shadow-xl border-2 rounded-lg border-slate-200 gap-7 cursor-pointer sm:justify-start sm:items-center items-center hover:scale-105 transition-all">
+            <div className="flex dark:shadow-darkt3 dark:bg-darkt1 px-4 py-3 shadow-xl border-2 rounded-lg border-slate-200 gap-7 cursor-pointer sm:justify-start sm:items-center items-center hover:scale-105 transition-all">
               <img
                 src="/images/whatsapp.png"
                 alt="whatsapp"
@@ -77,7 +77,7 @@ const Contact = () => {
               placeholder="Your Name"
               required
               name="user_name"
-              className="w-full sm:w-[80%] py-2 px-3 rounded-lg outline-none bg-[#d1deec8a] "
+              className="w-full sm:w-[80%] py-2 px-3 rounded-lg outline-none bg-[#d1deec8a] dark:bg-darkt2 "
             />
             <br />
             <input
@@ -85,7 +85,7 @@ const Contact = () => {
               required
               placeholder="Your Email"
               name="user_email"
-              className="w-full sm:w-[80%] py-2 px-3 rounded-lg outline-none bg-[#d1deec8a] "
+              className="w-full sm:w-[80%] py-2 px-3 rounded-lg outline-none bg-[#d1deec8a] dark:bg-darkt2 "
             />
             <br />
             <textarea
@@ -94,7 +94,7 @@ const Contact = () => {
               cols="30"
               rows="6"
               placeholder="Your Message"
-              className="w-full sm:w-[80%] py-2 px-3 rounded-lg outline-none bg-[#d1deec8a] "
+              className="w-full sm:w-[80%] py-2 px-3 rounded-lg outline-none bg-[#d1deec8a] dark:bg-darkt2 "
             />
             <br />
             <button className="transition-all hover:scale-[107%] mt-5 text-white font-medium px-5 py-1.5 rounded-full  bg-gradient-to-r from-yellow-500  to-dor hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-yellow-300">
